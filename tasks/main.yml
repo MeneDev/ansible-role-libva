@@ -1,0 +1,9 @@
+---
+- name: Install packages
+  dnf:
+    name: "{{ item }}"
+  with_items:
+    - libva
+    - libva-utils
+    - libva-intel-hybrid-driver
+    - http://download1.rpmfusion.org/free/fedora/releases/28/Everything/x86_64/os/Packages/l/libva-intel-driver-2.1.0-2.fc28.x86_64.rpm
